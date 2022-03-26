@@ -8,7 +8,7 @@ const somar =  (numA, numB) => {
     resultado = numA + numB;
 
     try {
-      fs.appendFile(
+      fs.appendFile(  //fs.writeFile
         "resultado.txt", //se modificar o nome do arquivo para resultado2.txt não entra catch. Ele cria um novo arquivo com esse nome
         `${numA} + ${numB} = ${resultado} \n`
       ).then(console.log(resultado));
